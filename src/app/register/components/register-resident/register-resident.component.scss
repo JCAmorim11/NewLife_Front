@@ -1,0 +1,53 @@
+.full-width{
+    width: 100%;
+    margin: 0.5% auto;
+    margin-top: 3%;
+    margin-left: 0%;
+}
+form{
+    text-align: left;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    margin: 5% auto;
+    margin-right: 0%;
+    margin-left: 20%;
+}
+
+.bInput{
+    width: 48%;
+}
+
+mat-form-field{
+    margin: 0 0.75%;
+    width: 100%;
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+.tInput{
+ width: 15%
+}
+form{
+    width: 100%;
+}
+button{
+    margin: 0.3%;
+    margin-left: 0.75%;
+    background-color: #EDE7F6;
+}
+
+.alternador{
+    display: flex;
+    margin-inline: auto;
+}
+.sInput{
+    width: 64.5%
+}
+

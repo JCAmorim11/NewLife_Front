@@ -1,0 +1,48 @@
+i
+<div class="container" fxLayout="row">
+  <div class="logo">
+    <img src="assets/images/logo-newLife.png" alt="Logo-NewLife" />
+    <div class="alternador">
+      <button id="anterior">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <button id="proximo">
+        <mat-icon> arrow_forward</mat-icon>
+      </button>
+    </div>
+  </div>
+  <form class="full-width" [formGroup]="vehiclesForm">
+    <div class="full-width">
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> Apartamento </mat-label>
+        <input type="text" matInput formControlName="apartment" />
+      </mat-form-field>
+
+      <div class="dadosDois">
+        <mat-form-field appearance="outline" class="tInput">
+          <mat-label> Placa </mat-label>
+          <input type="text" matInput formControlName="plate" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="tInput">
+          <mat-label> Marca </mat-label>
+          <input type="text" matInput formControlName="brand" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="tInput">
+          <mat-label> Modelo </mat-label>
+          <input type="text" matInput formControlName="model" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="tInput">
+          <mat-label> Cor </mat-label>
+          <input type="text" matInput formControlName="color" />
+        </mat-form-field>
+      </div>
+      <div class="button" fxLayout="row">
+        <button mat-stroked-button type="button" routerLink="/search">
+          Fechar
+        </button>
+        <button mat-stroked-button (click)="save()">Salvar</button>
+        <button mat-stroked-button type="reset">Limpar</button>
+      </div>
+    </div>
+  </form>
+</div>

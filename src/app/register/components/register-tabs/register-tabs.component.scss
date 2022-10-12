@@ -1,0 +1,20 @@
+.button-row{
+    margin: 0.5% auto;
+    margin-left: 0;
+    text-align: center;
+    color: rgb(29, 1, 29) ;
+    font-size: 14px;
+    font-weight: bolder;
+}
+button{
+    padding: 0.1%;
+    width: 8%;
+    font-weight: bolder;
+} 
+button:focus{
+    border-bottom-color: linear-gradient(purple,whitesmoke);
+    border-bottom-width: 5px;
+    border-bottom-style:groove;
+    background-color:#f0efff;
+}
+

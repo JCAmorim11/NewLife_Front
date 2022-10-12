@@ -1,0 +1,47 @@
+span{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    text-rendering: geometricPrecision;
+    font-weight: bolder;
+    margin-left: 1%;
+    margin-top: 18%;
+}
+#copyright{
+    font-size:8px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serifS;
+}
+.tool{
+    display: flex;   
+    flex-direction: row;
+ }
+#lod{
+    font-size: 15px;
+
+}
+ mat-toolbar{
+    background-color: #AC97D2;
+ }
+img{
+    max-width:220px;
+    color: white;
+    max-height:85px;
+    object-fit: contain;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #AC97D2;
+    color: white;
+    height: 4%;
+    text-align: center;
+}
+.text{
+    left:0;
+    bottom:0;
+    width:5%;
+    position: fixed;
+}

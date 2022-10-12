@@ -1,0 +1,40 @@
+.tableForm{
+    width: 100%;
+    overflow:auto; 
+}
+.main{
+    max-height: 800px;
+    overflow:auto; 
+}
+table{
+    width: 100%;
+    overflow:auto; 
+}
+.paginator{
+    width: 100%;
+    display: flex;
+    margin-top: 0.5%;
+    margin-right: -40%;
+}
+
+.controller{
+    display: flex;
+    margin-left: 0.75%;
+    gap: 0.5%;
+    flex-direction: row;
+}
+
+#register{
+    background-color: #EDE7F6;
+    color: black;
+}
+.editar{
+    display: flex;
+    flex-direction: row;
+}
+.login{
+    background-color: #EDE7F6;
+    color: black;
+    max-height: 30%;
+}
+

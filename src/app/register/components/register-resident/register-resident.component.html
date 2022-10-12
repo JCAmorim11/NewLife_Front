@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="logo">
+    <img src="assets/images/logo-newLife.png" alt="Logo-NewLife" />
+    <div class="alternador">
+      <button id="anterior">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <button id="proximo">
+        <mat-icon> arrow_forward</mat-icon>
+      </button>
+    </div>
+  </div>
+  <!--  
+  </div>-->
+  <form class="full-width" [formGroup]="residentForm">
+    <div class="dadosUm">
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> Apartamento </mat-label>
+        <input
+          type="text"
+          [disabled]="isEdit"
+          matInput
+          formControlName="apartment"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="bInput">
+        <mat-label> Nome </mat-label>
+        <input type="text" matInput formControlName="name" />
+      </mat-form-field>
+    </div>
+    <div class="dadosDois">
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> CPF </mat-label>
+        <input type="text" [disabled]="isEdit" matInput formControlName="cpf" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> RG </mat-label>
+        <input type="text" matInput formControlName="rg" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> Telefone 1 </mat-label>
+        <input type="text" matInput formControlName="telephoneA" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> Telefone 2 </mat-label>
+        <input type="text" matInput formControlName="telephoneB" />
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline" class="bInput" class="bInput">
+      <mat-label> Email </mat-label>
+      <input type="text" matInput formControlName="email" />
+    </mat-form-field>
+
+    <div class="dadosTres">
+      <mat-form-field appearance="outline" class="bInput">
+        <mat-label> Contato de Emergencia </mat-label>
+        <input type="text" matInput formControlName="emergencyContact" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="tInput">
+        <mat-label> Telefone de Emergencia </mat-label>
+        <input type="text" matInput formControlName="emergencyTelephone" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="sInput">
+        <mat-label> Observações </mat-label>
+        <textarea matInput rows="5" formControlName="obs"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="button" fxLayout="row">
+      <button mat-stroked-button type="button" routerLink="/search">
+        Fechar
+      </button>
+      <button
+        mat-stroked-button
+        [disabled]="!residentForm.valid"
+        (click)="isEdit ? update() : create()"
+      >
+        {{ isEdit ? "Atualizar" : "Salvar" }}
+      </button>
+      <button mat-stroked-button type="reset">Limpar</button>
+    </div>
+  </form>
+</div>

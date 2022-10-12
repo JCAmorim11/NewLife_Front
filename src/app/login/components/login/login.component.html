@@ -1,0 +1,37 @@
+<section>
+  <form class="forno" id="forn" [formGroup]="loginForm">
+    <div
+      class="form"
+      fxLayout="column"
+      fxLayoutAlign="center"
+      fxLayoutGap="-5%"
+    >
+      <mat-form-field appearance="outline" fxFlex="10%">
+        <mat-label> Usuário </mat-label>
+        <input type="text" matInput id="usuario" formControlName="user" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" fxFlex="10%">
+        <mat-label> Senha </mat-label>
+        <input type="text" id="senha" matInput formControlName="pass" />
+      </mat-form-field>
+      <button class="cleaner" mat-button type="reset">Limpar</button>
+    </div>
+  </form>
+</section>
+<section>
+  <div class="botoes" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1%">
+    <button
+      mat-button
+      type="reset"
+      fxFlex="14.2%"
+      [disabled]="!loginForm.valid"
+      (click)="log()"
+      onclick=""
+    >
+      Entrar
+    </button>
+    <button mat-button routerLink="/search">Entrar como convidado</button>
+  </div>
+</section>
+
+<!-- [routerLink]="checkar() ? '/register/resident' : null" -->
